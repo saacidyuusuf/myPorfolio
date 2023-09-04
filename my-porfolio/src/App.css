@@ -189,26 +189,30 @@ body {
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
 }
-.picture-container img:nth-child(4){
+.picture-container img:first-child{
   position: absolute;
-  left: 40%;
+  left: 15%;
+  height: 63vh;
+  z-index: 1;
 }
 
 .picture-container img:nth-child(2){
   position: absolute;
   height: 63vh;
   left: 25%;
+  z-index: 3;
 }
 
 .picture-container img:nth-child(1){
   position: absolute;
-  left: 15%;
+  left: 10%;
+  z-index: 2;
 }
 
 .picture-container img.selected {
-  border-color: blue;
-  z-index: 2;
-  width: 30%;
+  border: 3px solid var(--secondry-color);
+  z-index: 9999;
+  width: 25%;
   height: 63vh;
 }
 
