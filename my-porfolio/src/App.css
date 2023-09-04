@@ -1,0 +1,344 @@
+/*baluugi iskudayga kor*/
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --clr-gold: #c59d5f;
+  --clr-black: #222;
+  --main-color: #339b67;
+  --secondry-color: #ffcb74;
+  --third-color: #2f2f2f;
+}
+
+canvas {
+  z-index: -1;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.projects {
+  color: white;
+}
+.projectTitle {
+  font-size: 3rem;
+  color: var(--main-color);
+}
+
+
+.projectspan {
+  color: var(--secondry-color);
+  font-size: 2.5rem;
+}
+
+.projectCont {
+  width: 90%;
+  margin: auto;
+}
+
+.projectGrid {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "main four four"
+    "main one two";
+  gap: 1.5rem;
+}
+
+.gridp {
+  margin-top: 2rem;
+}
+
+.gridp img {
+  width: 100%;
+}
+
+.Four {
+  width: 90%;
+}
+
+.One {
+  grid-area: one;
+  width: 100%;
+  height: 110%;
+}
+
+.One h3,
+.Two h3,
+.Three h3,
+.Four h3 {
+  color: var(--main-color);
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.One p,
+.Two p,
+.Three p,
+.Four p {
+  line-height: 1.5;
+}
+
+.githupProject {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.githupProject span {
+  position: absolute;
+  right: 0.2em;
+  bottom: 0.3rem;
+}
+
+.Two {
+  grid-area: two;
+}
+
+.Three {
+  grid-area: main;
+  column-gap: 1rem;
+}
+
+.Four {
+  grid-area: four;
+}
+
+.projectwork{
+  margin-bottom: 35rem;
+}
+
+
+
+@media (max-width: 900px) {
+  .projectGrid {
+    height: 100vh;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .one {
+    height: 200%;
+  }
+  .two {
+    height: 150%;
+  }
+  .three {
+    height: 150%;
+  }
+  .four {
+    height: 250%;
+  }
+  .icongit {
+    position: absolute;
+    top: -15rem;
+    right: 1%;
+  }
+  .githupProject h3 {
+    font-size: 2rem;
+  }
+}
+
+/* testimonial */
+
+.testiTitle{
+  color: var(--main-color);
+  text-align: center;
+  font-size: 3rem;
+}
+
+.picture{
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.picture-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.picture-container img {
+  width: 20%;
+  cursor: pointer;
+  margin-right: 10px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.picture-container img:nth-child(4){
+  position: absolute;
+  left: 40%;
+}
+
+.picture-container img:nth-child(2){
+  position: absolute;
+  height: 63vh;
+  left: 25%;
+}
+
+.picture-container img:nth-child(1){
+  position: absolute;
+  left: 15%;
+}
+
+.picture-container img.selected {
+  border-color: blue;
+  z-index: 2;
+  width: 30%;
+  height: 63vh;
+}
+
+.content-container {
+  position: absolute;
+  left: 57%;
+  margin-top: 20px;
+}
+
+.imgscontent h1{
+  color: var(--main-color);
+  font-size: 3rem;
+  margin-bottom: 1.3rem;
+}
+
+.imgscontent span{
+  color: var(--secondry-color);
+  margin-bottom: 1rem;
+}
+
+.aboutfooter{
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 900px) {
+  .content-container{
+    z-index: 3;
+    top: 100%;
+    left: 5%;
+  }
+  .aboutfooter{
+    margin-bottom: 15rem;
+  }
+  .imgscontent h1{
+    text-align: center;
+  }
+  .imgscontent span{
+    text-align: center;
+    font-size: 1rem;
+  }
+  .imgscontent p{
+    white-space: wrap;
+  }
+  .picture-container img.selected {
+    border-color: blue;
+    z-index: 2;
+    width: 50%;
+    height: 55vh;
+  }
+  .picture-container img {
+    width: 40%;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .picture-container img:nth-child(2){
+    position: absolute;
+    left: 50%;
+  }
+  
+  .picture-container img:nth-child(1){
+    position: absolute;
+    left: 25%;
+  }
+  
+
+
+}
+
+
+/* footer */
+
+
+hr {
+  margin-top: 5rem;
+}
+
+.portfolio-footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  color: white;
+}
+
+.pro-container {
+  width: 90%;
+  margin: auto;
+}
+
+.footer-p {
+  display: grid;
+  align-content: center;
+  place-items: center;
+}
+
+.por-two-foter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  flex-wrap: wrap;
+}
+
+.por-two-col {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.por-two-col h2 {
+  text-transform: capitalize;
+  color: white;
+}
+
+.por-icons a{
+  color: var(--main-color);
+  font-size: 1.4rem;
+  margin: 0.40rem 0.30rem;
+  transition: all .6s ease ;
+}
+
+
+.por-icons i {
+  margin: 4px;
+}
+
+
+.por-col h1 {
+  text-transform: capitalize;
+}
