@@ -140,27 +140,16 @@ nav ul li a {
   width: 3px;
   margin-left: 0.50rem;
   height: 200px;
-/*  background: linear-gradient(to bottom, #915eff, #ffffff);
- */  background: linear-gradient(to bottom, #3a7a4a 0%, #42a16236 60%, #70c07717 100%);
+  background: linear-gradient(to bottom, #3a7a4a 0%, #42a16236 60%, #70c07717 100%);
 }
 
-.imghero{
-  /* background-image: url(../assets/2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-}
 
 .textcontent {
   position: absolute;
   top: 28%;
   left: 9%;
-  /* display: grid;
-    place-items: center;
-    margin-top: 1rem; */
   color: white;
 }
-
 
 
 .textcontent span {

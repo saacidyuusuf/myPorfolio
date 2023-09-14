@@ -31,6 +31,7 @@ const Hero = () => {
         </motion.p>
       </motion.div>
     </section>
+
         </>
   );
 };

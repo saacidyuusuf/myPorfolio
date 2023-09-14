@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 import { navVariants } from "../utilist/motion";
-import { hero1, logo3 } from "../assets/";
+import { logo3 } from "../assets/";
 
 const Navbar = () => {
   useEffect(() => {

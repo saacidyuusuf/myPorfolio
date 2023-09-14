@@ -188,6 +188,7 @@ body {
   margin-right: 10px;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
+  border-radius: 1rem;
 }
 .picture-container img:first-child{
   position: absolute;
@@ -279,14 +280,9 @@ body {
     position: absolute;
     left: 25%;
   }
-  
-
-
 }
 
-
 /* footer */
-
 
 hr {
   margin-top: 5rem;

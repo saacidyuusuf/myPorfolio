@@ -30,12 +30,14 @@ const WorkItem = () => {
   return (
     <>
       <Navbar />
-      <Hero/>
-      <Experience/>
+      <Hero />
+      <Experience />
       <section data-aos="fade" data-aos-delay="300" className={Classes.skill}>
         <div className={Classes.containerskill}>
           <div className={Classes.titleskill}>
-            <h1>Skills</h1>
+            <h1>
+              <span className="projectspan">&&</span> Skills
+            </h1>
           </div>
           <div className={Classes.colorhaye}>
             <div className={Classes.colorone}></div>
@@ -51,18 +53,20 @@ const WorkItem = () => {
                   layout
                   transition={{ layout: { duration: 1, type: "spring" } }}
                 >
-                    <motion.div
-                      className={Classes.jsmotion}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 1 }}>
-                      <p>
-                        Be so Good They <br/>can't Ignore U
-                      </p>
-                    </motion.div>
+                  <motion.div
+                    className={Classes.jsmotion}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
+                  >
+                    <p>
+                      Be so Good They <br />
+                      can't Ignore U
+                    </p>
+                  </motion.div>
                 </motion.div>
               </div>
-              
+
               <div className={Classes.skillone}>
                 <img width="70" src={pyimg} alt="" />
                 <motion.div
@@ -133,17 +137,19 @@ const WorkItem = () => {
                   className={Classes.githubinfo}
                   style={{ zIndex: 1 }}
                   layout
-                  transition={{ layout: { duration: 1, type: "spring" } }}>
-                  
-                    <motion.div
-                      className={Classes.githubmotion}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 1 }}>
-                      <p>
-                        every man has Two life when <br />did Your second start?
-                      </p>
-                    </motion.div>
+                  transition={{ layout: { duration: 1, type: "spring" } }}
+                >
+                  <motion.div
+                    className={Classes.githubmotion}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
+                  >
+                    <p>
+                      every man has Two life when <br />
+                      did Your second start?
+                    </p>
+                  </motion.div>
                 </motion.div>
               </div>
               <div className={Classes.skillone}>
@@ -155,9 +161,9 @@ const WorkItem = () => {
         </div>
       </section>
       <div className="projectwork">
-      <Projects/>
+        <Projects />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

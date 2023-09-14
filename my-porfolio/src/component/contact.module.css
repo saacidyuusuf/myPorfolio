@@ -1,3 +1,13 @@
+:root {
+  --clr-gold: #c59d5f;
+  --clr-black: #222;
+  --main-color: #339b67;
+  --secondry-color: #ffcb74;
+  --third-color: #2f2f2f;
+}
+
+
+
 .contactpor {
   width: 80%;
   color: white;
@@ -90,11 +100,6 @@ form {
   margin-bottom: 0.4rem;
 }
 
-/* .contact-about{
-    width: 100%;
-    margin-left: 1rem;
-} */
-
 .contact-about h1 {
   margin-bottom: 1rem;
   font-size: 3rem;
@@ -138,6 +143,7 @@ form {
 
 .icons {
   margin-top: 1rem;
+  color: var(--secondry-color);
 }
 
 .formbtn {

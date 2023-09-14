@@ -1,4 +1,4 @@
-import { saacid , four, two} from "../assets";
+import { saacid , two} from "../assets";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import {  navVariants, slideIn } from "../utilist/motion";
@@ -50,8 +50,7 @@ const Testimonial = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.25 }}
-              className="imgscontent"
-            >
+              className="imgscontent">
               <h1>E-commerce website</h1>
               <span>CEO</span>
               <p>
