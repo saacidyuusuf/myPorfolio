@@ -71,6 +71,7 @@ const Experience = () => {
             </li>
           </ul>
         </motion.div>
+
         <motion.div
           variants={slideIn('left', 'tween', 0.5, 0.6)}
           initial="hidden"
@@ -101,6 +102,7 @@ const Experience = () => {
           </ul>
         </motion.div>
       </div>
+
       <motion.div 
       variants={navVariants}
       initial='hidden'
@@ -110,21 +112,7 @@ const Experience = () => {
           <motion.h5
           initial='hidden'
           whileHover={hero1}
-          >work informa</motion.h5>
-          {/* <div className={classes.workinfo}>
-            <span>
-              backend <br /> Lorem ipsum dolor sit amet consectetur adipisicing
-              espant. Fugit, voluptas!
-            </span>
-            <span>
-              Design <br /> Lorem ipsum dolor sit amet consectetur adipisicing
-              espant. Fugit, voluptas!
-            </span>
-            <span>
-              Software Lorem ipsum dolor sit amet consectetur adipisicing
-              espant. Fugit, voluptas!
-            </span>
-          </div> */}
+          >BaxarFlow</motion.h5>
         </div>
       </motion.div>
     </section>

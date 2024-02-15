@@ -52,19 +52,7 @@ const WorkItem = () => {
                   data-aos-delay="500"
                   layout
                   transition={{ layout: { duration: 1, type: "spring" } }}
-                >
-                  <motion.div
-                    className={Classes.jsmotion}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
-                  >
-                    <p>
-                      Be so Good They <br />
-                      can't Ignore U
-                    </p>
-                  </motion.div>
-                </motion.div>
+                ></motion.div>
               </div>
 
               <div className={Classes.skillone}>
@@ -78,7 +66,7 @@ const WorkItem = () => {
                   layout
                   transition={{ layout: { duration: 1, type: "spring" } }}
                 >
-                  <motion.h2>python work</motion.h2>
+                  <motion.h2>python</motion.h2>
                   {isopen === "python" && (
                     <motion.div
                       className={Classes.pymotion}
@@ -107,7 +95,7 @@ const WorkItem = () => {
                   layout
                   transition={{ layout: { duration: 1, type: "spring" } }}
                 >
-                  <motion.h2 layout="position">html work</motion.h2>
+                  <motion.h2 layout="position">html</motion.h2>
                   {isopen === "html" && (
                     <motion.div
                       className={Classes.htmlmotion}
@@ -138,19 +126,7 @@ const WorkItem = () => {
                   style={{ zIndex: 1 }}
                   layout
                   transition={{ layout: { duration: 1, type: "spring" } }}
-                >
-                  <motion.div
-                    className={Classes.githubmotion}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
-                  >
-                    <p>
-                      every man has Two life when <br />
-                      did Your second start?
-                    </p>
-                  </motion.div>
-                </motion.div>
+                ></motion.div>
               </div>
               <div className={Classes.skillone}>
                 <img width="70" className="github" src={githubimg} alt="" />

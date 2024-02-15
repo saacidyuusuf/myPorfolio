@@ -34,7 +34,6 @@ const Projects = () => {
                 Studio Website
               </h3>
               <span>
-                {" "}
                 <FaGithub
                   className="icongit"
                   data-aos="fade-in"

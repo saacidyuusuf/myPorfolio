@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +9,7 @@
   --clr-black: #222;
   --main-color: #339b67;
   --secondry-color: #ffcb74;
-   --third-color: #2f2f2f;
-
+  --third-color: #2f2f2f;
 }
 
 canvas {
@@ -22,8 +20,6 @@ canvas {
   height: 100%;
   position: fixed;
 }
-
-
 
 html {
   scroll-behavior: smooth;
@@ -62,8 +58,6 @@ body {
   display: none;
 }
 
-
-
 .navmenu {
   margin-left: 35px;
   height: 0;
@@ -87,8 +81,6 @@ nav ul li a {
   color: white;
 }
 
-
-
 @media (min-width: 800px) {
   .navmenu {
     display: flex;
@@ -105,13 +97,12 @@ nav ul li a {
   }
 }
 @media (max-width: 900px) {
-  
   .flex {
     display: flex;
     justify-content: space-between;
     padding: 1rem 1rem;
   }
- 
+
   .logo {
     margin: 15px 10px;
   }
@@ -121,14 +112,14 @@ nav ul li a {
   min-height: 90vh;
 }
 
-.flexHero{
+.flexHero {
   display: flex;
   flex-direction: column;
   margin-top: 0.35rem;
   position: absolute;
 }
 
-.roundHero{
+.roundHero {
   background: var(--main-color);
   width: 15px;
   height: 15px;
@@ -136,13 +127,17 @@ nav ul li a {
   border-radius: 50%;
 }
 
-.lineHero{
+.lineHero {
   width: 3px;
-  margin-left: 0.50rem;
+  margin-left: 0.5rem;
   height: 200px;
-  background: linear-gradient(to bottom, #3a7a4a 0%, #42a16236 60%, #70c07717 100%);
+  background: linear-gradient(
+    to bottom,
+    #3a7a4a 0%,
+    #42a16236 60%,
+    #70c07717 100%
+  );
 }
-
 
 .textcontent {
   position: absolute;
@@ -150,7 +145,6 @@ nav ul li a {
   left: 9%;
   color: white;
 }
-
 
 .textcontent span {
   font-size: 3rem;
@@ -198,16 +192,32 @@ nav ul li a {
     font-size: 2rem;
     margin-left: 0;
   }
-  .textcontent p{
+  .textcontent p {
     margin-left: 0;
   }
   .textcontent {
     left: 7%;
   }
-  .flexHero{
+  .flexHero {
     display: none;
   }
 }
+
+@media (max-width: 450px) and (max-width: 600px) {
+  .textcontent {
+    position: absolute;
+    top: 28%;
+    left: 9%;
+    color: white;
+  }
+  .textcontent h1 {
+    font-size: 8rem;
+  }
+  .textcontent p {
+    font-size: 2rem;
+  }
+}
+
 /*section 2*/
 
 .myjourney {
@@ -219,20 +229,15 @@ nav ul li a {
 .myjourney h1 {
   font-size: 3rem;
   text-align: center;
-  /* width: 20px; */
   color: var(--main-color);
 }
 
 .containert {
   width: 80%;
   margin: auto;
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .coloraboutme {
-  /*  background-color: #efff; */
   box-shadow: 0 20px 20px rgba(214, 212, 212, 0.877),
     0px 0px 40px rgba(214, 212, 212, 0.808);
   width: 100%;
@@ -339,14 +344,6 @@ nav ul li a {
   border-radius: 8px;
 }
 
-/* .w-ido{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-} */
-
 .exporttitle h2 {
   color: white;
   font-size: 2.4rem;
@@ -437,7 +434,7 @@ nav ul li a {
 }
 
 .worktitle h1 {
-  color:#339b67;
+  color: #339b67;
   font-size: 3.5rem;
 }
 
@@ -471,15 +468,19 @@ nav ul li a {
   background-color: #222;
 }
 
+/* .row{
+  width: 100%;
+  height: 20vh;
+} */
+
 .row ul {
   margin-top: 0.5rem;
-  line-height: 1.6;
   padding: 20px;
 }
 
 .workone ul li {
   margin-top: 0.3rem;
-  margin-left: 0.30rem;
+  margin-left: 0.3rem;
 }
 
 .workone span {
@@ -488,24 +489,22 @@ nav ul li a {
   margin: auto;
 }
 
-
-.two{
+.two {
   position: relative;
   top: 60%;
 }
 
-.workbottom{
+.workbottom {
   position: absolute;
   top: 20%;
   left: 46%;
-  background-color: var(--main-color);
   width: 105px;
   height: 100px;
   border-radius: 50%;
   box-shadow: 0 0 20px 0px rgba(143, 151, 147, 0.932);
 }
 
-.recentwork{
+.recentwork {
   position: absolute;
   top: 37%;
   color: white;
@@ -513,41 +512,70 @@ nav ul li a {
   white-space: wrap;
 }
 
-.workinfo{
+.workinfo {
   position: absolute;
   left: -205%;
   top: 200%;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
   column-gap: 4rem;
   flex: 1;
 }
 
-/* .workinfo span:nth-child(3){
-  margin: auto;
-  margin-left: 8rem;
-} */
-
-.workinfo span{
+.workinfo span {
   font-size: 1rem;
   width: 205px;
   padding-right: 0.6rem;
 }
 
-
 @media (max-width: 900px) {
   .works {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
-  .workbottom{
+  .workbottom {
     top: 12%;
     left: 65%;
   }
 }
 
+@media (max-width: 450px) and (max-width: 600px) {
+  .worktitle {
+    font-family: poppsins, sans-serif;
+    text-align: center;
+  }
+  .workone {
+    width: 180%;
+    margin: auto;
+    padding: 1rem;
+  }
+  .workbottom {
+    top: 12%;
+    left: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .recentwork {
+    position: absolute;
+    top: 37%;
+    color: white;
+    left: 8%;
+    white-space: wrap;
+  }
+  .recentwork h5 {
+    font-size: 2rem;
+  }
+  .two {
+    position: relative;
+    top: 60%;
+    left: 63%;
+  }
 
-
+  .workone ul li {
+    font-size: 1.5rem;
+  }
+}
 
 /*skill*/
 
@@ -618,7 +646,6 @@ nav ul li a {
   z-index: 9999;
 }
 
-
 .javainfo {
   position: absolute;
   top: -5%;
@@ -634,11 +661,12 @@ nav ul li a {
 .htmlinfo,
 .cssinfo,
 .githubinfo,
-.reactinfo, h2 {
+.reactinfo,
+h2 {
   color: black;
 }
 
-.jsmotion{
+.jsmotion {
   background-color: #339b67;
   padding: 20px;
   border-radius: 50px 70% 20px 20px;
@@ -651,13 +679,13 @@ nav ul li a {
   font-size: 1.5rem;
 }
 
-.githubmotion{
-  background-color:#339b67;
+.githubmotion {
+  background-color: #339b67;
   padding: 20px;
   border-radius: 50% 20px;
 }
 
-.githubmotion p{
+.githubmotion p {
   font-size: 1.5rem;
   color: white;
 }
@@ -666,24 +694,24 @@ nav ul li a {
   position: absolute;
   top: -5%;
   right: -180%;
-  padding: 4px;
-  border-radius: 7px;
+  padding: 10px;
+  border-radius: 70%;
   background-color: #efefef;
   text-align: center;
   color: #395a31;
-  width: 170%;
+  width: 100%;
 }
 
 .htmlinfo {
   position: absolute;
   top: 32%;
-  left: -290%;
-  padding: 4px;
-  border-radius: 7px;
+  left: -200%;
+  padding: 10px;
+  border-radius: 70%;
   text-align: center;
   color: black;
   background-color: #efefef;
-  width: 170%;
+  width: 100%;
 }
 
 .cssinfo {
@@ -744,5 +772,64 @@ nav ul li a {
     margin-top: 2rem;
     width: 70%;
     left: 15%;
+  }
+}
+
+@media (max-width: 900px) {
+/*   .githubmotion {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    right: 80%;
+  }
+  .jsmotion{
+    width: 100%;
+    position: absolute;
+    left: 80%;
+  } */
+  .htmlinfo {
+    position: absolute;
+    top: 32%;
+    left: -159%;
+    padding: 10px;
+    border-radius: 50%;
+    aspect-ratio: 3/1;
+    text-align: center;
+    color: black;
+    background-color: #efefef;
+    width: 100%;
+  }
+  .pyinfo {
+    position: absolute;
+    top: -5%;
+    right: -100%;
+    padding: 10px;
+    aspect-ratio: 3/1;
+    border-radius: 50%;
+    background-color: #efefef;
+    text-align: center;
+    color: #395a31;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 450px) and (max-width: 600px) {
+  .githubmotion {
+    position: relative;
+    right: 80%;
+  }
+  .skillkayga {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  .colorhaye {
+    width: 100%;
+    margin: auto;
+  }
+  .colorone {
+    position: relative;
+    width: 300%;
+    margin: auto;
   }
 }

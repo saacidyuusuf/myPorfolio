@@ -59,7 +59,7 @@ body {
   grid-template-areas:
     "main four four"
     "main one two";
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .gridp {
@@ -127,15 +127,12 @@ body {
 }
 
 
-
 @media (max-width: 900px) {
   .projectGrid {
     height: 100vh;
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
   }
-
   .one {
     height: 200%;
   }
@@ -155,6 +152,30 @@ body {
   }
   .githupProject h3 {
     font-size: 2rem;
+  }
+}
+
+
+@media (max-width: 450px) and (max-width: 600px) {
+  .projectGrid {
+    width: 170%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .one {
+    height: 200%;
+  }
+  .two {
+    height: 150%;
+  }
+  .three {
+    height: 150%;
+  }
+  .four {
+    height: 250%;
+  }
+  .projectwork{
+    margin-bottom: 10rem;
   }
 }
 
@@ -341,4 +362,22 @@ hr {
 
 .por-col h1 {
   text-transform: capitalize;
+}
+
+
+@media (max-width: 450px) and (max-width: 600px) {
+  .portfolio-footer {
+    position: static;
+    bottom: 0;
+    width: 170%;
+    padding: 20px;
+    color: white;
+  }
+  .pro-container {
+    width: 100%;
+    margin: auto;
+  }
+  hr {
+    width: 170%;
+  }
 }
