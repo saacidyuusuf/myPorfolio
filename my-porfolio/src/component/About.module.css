@@ -73,7 +73,6 @@
 
 .gadalcols p {
   color: white;
-  font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.4;
   font-size: 12px;
   margin-bottom: 0.4rem;
@@ -129,7 +128,7 @@
 }
 
 .exporttitle h2 {
-  color: var(--secondry-color);
+  color: white;
   font-size: 2.4rem;
   margin-bottom: 1.3rem;
   border-bottom: 4px solid var(--main-color);
@@ -146,7 +145,6 @@
 
 .do p {
   color: white;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .do h3 {
@@ -203,24 +201,22 @@
 }
 
 @media (max-width: 450px) and (max-width: 600px) {
-  .myjourney{
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
-  }
-  .myjourney h1 {
+
+  .myjourney h1{
     font-size: 3rem;
     text-align: center;
     color: var(--main-color);
   }
   .gadalcols {
     width: 150%;
-   margin: auto;
+    margin-left: 3.2rem;
+    font-size: 1.2rem;
+  }
+  .gadalcols p{
+    font-size: 2rem;
   }
   .journeyhaye {
-    width: 100%;
+    width: 110%;
     max-width: auto;
     position: relative;
     display: grid;
@@ -228,10 +224,34 @@
     align-items: center;
     margin-top: 5rem;
     gap: 4rem;
+    font-size: 1.8rem;
+  }
+  .wido{
+    margin-left: 7.1rem;
+    width: 115%;
+    margin-bottom: 1rem;
+  }
+  .coloraboutme {
+    box-shadow: 0 20px 20px rgba(214, 212, 212, 0.877),
+      0px 0px 40px rgba(214, 212, 212, 0.808);
+    width: 150%;
+    height: 50%;
+    position: absolute;
+    top: 40%;
+    margin: auto;
+    margin-left: 2.5rem;
+    z-index: -1;
+    border-radius: 8px;
+  }
+  .myjourney h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-left: 10rem;
+    white-space: nowrap;
+    margin-bottom: 0;
+    color: var(--main-color);
   }
 }
-
-
 
 /*hoos testi*/
 

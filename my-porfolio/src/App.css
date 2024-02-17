@@ -42,7 +42,6 @@ body {
   color: var(--main-color);
 }
 
-
 .projectspan {
   color: var(--secondry-color);
   font-size: 2.5rem;
@@ -122,10 +121,9 @@ body {
   grid-area: four;
 }
 
-.projectwork{
+.projectwork {
   margin-bottom: 35rem;
 }
-
 
 @media (max-width: 900px) {
   .projectGrid {
@@ -155,7 +153,6 @@ body {
   }
 }
 
-
 @media (max-width: 450px) and (max-width: 600px) {
   .projectGrid {
     width: 170%;
@@ -174,20 +171,20 @@ body {
   .four {
     height: 250%;
   }
-  .projectwork{
-    margin-bottom: 10rem;
+  .projectwork {
+    margin-bottom: 20rem;
   }
 }
 
 /* testimonial */
 
-.testiTitle{
+.testiTitle {
   color: var(--main-color);
   text-align: center;
   font-size: 3rem;
 }
 
-.picture{
+.picture {
   position: relative;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -211,21 +208,22 @@ body {
   transition: border-color 0.3s ease;
   border-radius: 1rem;
 }
-.picture-container img:first-child{
+
+.picture-container img:first-child {
   position: absolute;
   left: 15%;
   height: 63vh;
   z-index: 1;
 }
 
-.picture-container img:nth-child(2){
+.picture-container img:nth-child(2) {
   position: absolute;
   height: 63vh;
   left: 25%;
   z-index: 3;
 }
 
-.picture-container img:nth-child(1){
+.picture-container img:nth-child(1) {
   position: absolute;
   left: 10%;
   z-index: 2;
@@ -235,47 +233,47 @@ body {
   border: 3px solid var(--secondry-color);
   z-index: 9999;
   width: 25%;
-  height: 63vh;
+  height: 55vh;
 }
 
 .content-container {
   position: absolute;
-  left: 57%;
+  left: 53%;
   margin-top: 20px;
 }
 
-.imgscontent h1{
+.imgscontent h1 {
   color: var(--main-color);
   font-size: 3rem;
   margin-bottom: 1.3rem;
 }
 
-.imgscontent span{
+.imgscontent span {
   color: var(--secondry-color);
   margin-bottom: 1rem;
 }
 
-.aboutfooter{
+.aboutfooter {
   margin-bottom: 5rem;
 }
 
 @media (max-width: 900px) {
-  .content-container{
+  .content-container {
     z-index: 3;
     top: 100%;
     left: 5%;
   }
-  .aboutfooter{
+  .aboutfooter {
     margin-bottom: 15rem;
   }
-  .imgscontent h1{
+  .imgscontent h1 {
     text-align: center;
   }
-  .imgscontent span{
+  .imgscontent span {
     text-align: center;
     font-size: 1rem;
   }
-  .imgscontent p{
+  .imgscontent p {
     white-space: wrap;
   }
   .picture-container img.selected {
@@ -291,15 +289,110 @@ body {
     border: 2px solid transparent;
     transition: border-color 0.3s ease;
   }
-  
-  .picture-container img:nth-child(2){
+  /* kan sadaxad */
+  .picture-container img:nth-child(2) {
     position: absolute;
     left: 50%;
+    height: 55vh;
   }
-  
-  .picture-container img:nth-child(1){
+  /* kan dhaxda */
+  .picture-container img:nth-child(1) {
     position: absolute;
     left: 25%;
+    height: 55vh;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+  .picture {
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+  }
+  .content-container {
+    position: absolute;
+    top: 70%;
+    left: 48%;
+  }
+  .picture-container img.selected {
+    border-color: blue;
+    z-index: 2;
+    width: 50%;
+    height: 55vh;
+  }
+  .picture-container img {
+    width: 40%;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  /* kan sadaxad */
+  .picture-container img:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    height: 55vh;
+  }
+  /* kan dhaxda */
+  .picture-container img:nth-child(1) {
+    position: absolute;
+    left: 25%;
+    height: 55vh;
+  }
+ 
+}
+
+@media (max-width: 450px) and (max-width: 600px) {
+  .picture-container {
+    position: relative;
+    margin: 3rem;
+  }
+  .testiTitle{
+    font-size: 5rem;
+    display: flex;
+    text-align: center;
+    margin-left: 7rem;
+  }
+  .imgscontent h1{
+    white-space: nowrap;
+  }
+  .picture-container img {
+    width: 60%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  .picture-container img.selected {
+    border-color: blue;
+    z-index: 2;
+    width: 50%;
+    height: 33vh;
+  }
+  /* kan sadaxad */
+  .picture-container img:nth-child(2) {
+    position: absolute;
+    left: 130%;
+    height: 33vh;
+    width: 60%;
+  }
+  /* kan dhaxda */
+  .picture-container img:nth-child(1) {
+    position: absolute;
+    left: 25%;
+    height: 30vh;
+  }
+  /*  */
+  .picture-container img:first-child {
+    position: absolute;
+    left: 65%;
+    height: 33vh;
+  }
+  .imgscontent p{
+    font-size: 1.3rem;
   }
 }
 
@@ -347,23 +440,20 @@ hr {
   color: white;
 }
 
-.por-icons a{
+.por-icons a {
   color: var(--main-color);
   font-size: 1.4rem;
-  margin: 0.40rem 0.30rem;
-  transition: all .6s ease ;
+  margin: 0.4rem 0.3rem;
+  transition: all 0.6s ease;
 }
-
 
 .por-icons i {
   margin: 4px;
 }
 
-
 .por-col h1 {
   text-transform: capitalize;
 }
-
 
 @media (max-width: 450px) and (max-width: 600px) {
   .portfolio-footer {

@@ -762,7 +762,6 @@ h2 {
   .skillkayga {
     position: absolute;
   }
-
   .colorone {
     position: relative;
     width: 100%;
@@ -776,7 +775,7 @@ h2 {
 }
 
 @media (max-width: 900px) {
-/*   .githubmotion {
+  /*   .githubmotion {
     width: 100%;
     position: absolute;
     top: 80%;
@@ -813,23 +812,19 @@ h2 {
   }
 }
 
-
 @media (max-width: 450px) and (max-width: 600px) {
   .githubmotion {
     position: relative;
     right: 80%;
   }
-  .skillkayga {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-  }
+  /*  .colorhaye {
+    width: 150%;
+    margin: auto;
+  } */
+
   .colorhaye {
     width: 100%;
     margin: auto;
-  }
-  .colorone {
-    position: relative;
-    width: 300%;
-    margin: auto;
+    margin-left: 10rem;
   }
 }

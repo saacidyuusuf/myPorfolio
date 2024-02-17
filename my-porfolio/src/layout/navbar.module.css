@@ -117,4 +117,7 @@ nav ul li a {
     width: 153%;
     display: flex;
   }
+  .bar {
+    font-size: 3rem;
+  }
 }

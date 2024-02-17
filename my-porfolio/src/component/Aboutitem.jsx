@@ -2,24 +2,24 @@ import Navbar from "../layout/navbar";
 //import { motion } from "framer-motion";
 import Classes from "./About.module.css";
 import { motion } from "framer-motion";
-import {navVariants } from "../utilist/motion";
+import { navVariants } from "../utilist/motion";
 import Testimonial from "./testimonial";
 import Footer from "./Footer";
 
 const Aboutitem = () => {
- 
   return (
     <>
       <Navbar />
       <section data-aos="fade-in" className={Classes.myjourney}>
         <h1>About me</h1>
         <div className={Classes.containert}>
-          <motion.div 
-          variants={navVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}
-          className={Classes.journeyhaye}>
+          <motion.div
+            variants={navVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+            className={Classes.journeyhaye}
+          >
             <div className={Classes.coloraboutme}></div>
             <div className={Classes.gadalcols}>
               <h4>Journey</h4>
@@ -42,26 +42,21 @@ const Aboutitem = () => {
                 <h2>What i Cook</h2>
               </div>
               <motion.div className={Classes.dogrid}>
-                <motion.div
-                  className={Classes.do}>
-                  <h3>Web designer</h3>
+                <motion.div className={Classes.do}>
+                  <h3>Application Developer</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Ratione eius assumenda numquam accusantium aliquam modi?
                   </p>
                 </motion.div>
-                <motion.div
-                  className={Classes.do}
-                >
+                <motion.div className={Classes.do}>
                   <h3>Web developer</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Ratione eius assumenda numquam accusantium aliquam modi?
                   </p>
                 </motion.div>
-                <motion.div
-                  className={Classes.do}
-                >
+                <motion.div className={Classes.do}>
                   <h3>Database</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -74,9 +69,9 @@ const Aboutitem = () => {
         </div>
       </section>
       <div className="aboutfooter">
-      <Testimonial/>
+        <Testimonial />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
