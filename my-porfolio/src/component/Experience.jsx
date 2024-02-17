@@ -1,7 +1,6 @@
 import classes from "./work.module.css";
 import { motion } from "framer-motion";
 import { navVariants, slideIn, textVariant } from "../utilist/motion";
-import { hero1 } from "../assets";
 
 const Experience = () => {
   return (
@@ -111,7 +110,7 @@ const Experience = () => {
         <div className={classes.recentwork}>
           <motion.h5
           initial='hidden'
-          whileHover={hero1}
+         /*  whileHover={hero1} */
           >BaxarFlow</motion.h5>
         </div>
       </motion.div>

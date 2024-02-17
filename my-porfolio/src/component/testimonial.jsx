@@ -1,4 +1,4 @@
-import { saacid, two } from "../assets";
+import { saacid, two} from "../assets";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { navVariants, slideIn } from "../utilist/motion";
@@ -17,7 +17,7 @@ const Testimonial = () => {
         <motion.div className="picture-container">
           <motion.img
             variants={slideIn("left", "tween", 0.8, 0.5)}
-            initial="hidden"
+            initial="hidden"  
             whileInView="show"
             src={saacid}
             alt="Picture 1"
