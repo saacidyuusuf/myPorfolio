@@ -11,6 +11,7 @@ import saacid from './sacid.jpg'
 import projectimg4 from './projectimg4.jpg'
 import projectimg5 from './projectimg5.jpg'
 import projectimg6 from './projectimg6.jpg'
+import two from './two.jpg'
 
 
 export {
@@ -26,5 +27,5 @@ export {
     projectimg5,
     projectimg6,
     saacid,
- 
+    two
 }
