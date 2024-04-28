@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 import { navVariants } from "../utilist/motion";
 import { logo3 } from "../assets/";
+import { harbi } from "../assets/";
 
 const Navbar = () => {
   useEffect(() => {
@@ -22,7 +23,7 @@ const Navbar = () => {
         whileInView="show"
         className={Classes.flex}
       >
-        <img src={logo3} className={Classes.logo} />
+        <img src={harbi} className={Classes.logo} />
         <div className={Classes.navbar}>
           <div className={Classes.link}>
             <nav>

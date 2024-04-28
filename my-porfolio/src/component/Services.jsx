@@ -1,76 +1,78 @@
 import Footer from "./Footer";
-import { editing ,marketing,uiux} from "../assets/index";
+import { editing, marketing, uiux, web } from "../assets/index";
 import { motion } from "framer-motion";
 import { navVariants } from "../utilist/motion";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
     <>
- 
-    <div className="servicesHaye">
-      <h1>Services</h1>
-      <div className="service">
-        <motion.div
-          className="serviceCol"
-          variants={navVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.2 }}
-        >
-          <img src={uiux} alt="web creation" />
-          <p>
-            I offer website creation services, helping you establish a strong
-            online presence. From crafting user-friendly layouts to optimizing
-            website performance
-          </p>
-          <h3>UI/UX</h3>
-        </motion.div>
-        <motion.div
-          variants={navVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.14 }}
-          className="serviceCol"
-        >
-          <img src={marketing} alt="web creation" />
-          <p>
-            My expertise lies in user research, information architecture, and
-            interaction design, ensuring your users have a seamless and
-            enjoyable experience.
-          </p>
-          <h3>Digital marketing</h3>
-        </motion.div>
-        <motion.div
-          className="serviceCol"
-          variants={navVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.16 }}
-        >
-          <img src={editing} alt="web creation" />
-          <p>
-            Leverage my movie poster design skills to create visually striking
-            posters that grab attention and capture the essence of your movie
-          </p>
-          <h3>Video Editing</h3>
-        </motion.div>
-        <motion.div
-          className="serviceCol"
-          variants={navVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.15 }}
-        >
-          <img src={marketing} alt="web creation" />
-          <p>
-            Leverage my movie poster design skills to create visually striking
-            posters that grab attention and capture the essence of your movie
-          </p>
-          <h3>Front-end developer</h3>
-        </motion.div>
+      <div className="servicesHaye">
+        <h1>Services</h1>
+        <div className="service">
+          <motion.div
+            className="serviceCol"
+            variants={navVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.15 }}
+          >
+            <img src={web} alt="web creation" />
+            <p>
+              I'm front-end developer over 1 year and half i worked alot of
+              Projects that you can view them on Github reach out if you want
+              user friendly website
+            </p>
+            <h3>Front-end developer</h3>
+          </motion.div>
+          <motion.div
+            className="serviceCol"
+            variants={navVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.2 }}
+          >
+            <img src={uiux} alt="web creation" />
+            <p>
+              I design Your dream website with UI/UX approach to make it more
+              interactive for the users.
+            </p>
+            <h3>UI/UX</h3>
+          </motion.div>
+          <motion.div
+            variants={navVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.14 }}
+            className="serviceCol"
+          >
+            <img src={marketing} alt="web creation" />
+            <p>
+              i'm digital marketing who promote products on facebook ads. aiming
+              the audience who want that product we promoted alot of business so
+              they can reach global audience.
+              <Link to="">Contact us here</Link>
+            </p>
+            <h3>Digital marketing</h3>
+          </motion.div>
+          <motion.div
+            className="serviceCol"
+            variants={navVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.16 }}
+          >
+            <img src={editing} alt="web creation" />
+            <p>
+              i'm video editer and i shot short films i worked with alot of
+              people through online videos about their life or projects they are
+              working on
+            </p>
+            <h3>Video Editing</h3>
+          </motion.div>
+        </div>
       </div>
-    </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import Classes from "./work.module.css";
-import {illustrator, premier} from '../assets/index'
+import { illustrator, premier } from "../assets/index";
 import jsimg from "./logos/javascript.png";
 import githubimg from "./logos/317712_code repository_github_repository_resource_icon.png";
 import reactimg from "./logos/7423887_react_react native_icon.png";
@@ -29,7 +29,7 @@ const WorkItem = () => {
   return (
     <>
       <Hero />
-      <Aboutitem/>
+      <Aboutitem />
       <section data-aos="fade" data-aos-delay="300" className={Classes.skill}>
         <div className={Classes.containerskill}>
           <div className={Classes.titleskill}>
@@ -55,31 +55,6 @@ const WorkItem = () => {
 
               <div className={Classes.skillone}>
                 <img width="70" src={premier} alt="" />
-                <motion.div
-                  onClick={() => handleSectionClick("python")}
-                  style={{ zIndex: 1 }}
-                  data-aos="fade-in"
-                  data-aos-delay="500"
-                  className={Classes.pyinfo}
-                  layout
-                  transition={{ layout: { duration: 1, type: "spring" } }}
-                >
-                  <motion.h2>python</motion.h2>
-                  {isopen === "python" && (
-                    <motion.div
-                      className={Classes.pymotion}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 1 }}
-                    >
-                      <p>
-                        Python ipsum, dolor sit amet consectetur adipisicing
-                        elit. Atque laudantium saepe earum libero fugiat nostrum
-                        sequi mollitia? Maxime, perspiciatis neque.
-                      </p>
-                    </motion.div>
-                  )}
-                </motion.div>
               </div>
               <div className={Classes.skillone}>
                 <img width="70" src={htmlimg} alt="" />

@@ -1,6 +1,4 @@
-import logo from "./logo.svg";
-import logo2 from "./logo2.svg";
-import logo3 from "./logo3.svg";
+
 import attendenceImg from './attendenceImg.png'
 import threejs1 from './threejs1.avif'
 import threejs2 from './threejs2.avif'
@@ -17,12 +15,12 @@ import marketing from './marketing.png'
 import uiux from './uiux.png'
 import premier from './premiere-pro.png'
 import illustrator from './illustrator.png'
+import web from './web.png'
+import harbi from './harbilogo.png'
 
 
 export {
-    logo,
-    logo2,
-    logo3,
+  
     threejs1,
     threejs2,
     threejs3,
@@ -38,5 +36,7 @@ export {
     editing,
     uiux,
     premier,
-    illustrator
+    illustrator,
+    web,
+    harbi
 }

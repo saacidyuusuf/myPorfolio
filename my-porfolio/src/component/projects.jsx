@@ -1,9 +1,4 @@
-import {
-  attendenceImg,
-  app,
-  baxarApp,
-  store,
-} from "../assets";
+import { attendenceImg, app, baxarApp, store } from "../assets";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   useEffect(() => {
-    AOS.init(); 
+    AOS.init();
   }, []);
   return (
     <section className="projects">
@@ -51,9 +46,8 @@ const Projects = () => {
               </Link>
             </div>
             <p data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              architecto vel odit distinctio accusantium asperiores minus!
-              Tempora delectus tenetur laborum?
+              i Created this web application so that people get article related
+              to tech and get what they looking for.
             </p>
           </div>
           <div className="gridp Two">
@@ -84,9 +78,8 @@ const Projects = () => {
               </Link>
             </div>
             <p data-aos-duration="1000" data-aos="fade-in" data-aos-delay="700">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              architecto vel odit distinctio accusantium asperiores minus!
-              Tempora delectus tenetur laborum?
+              This is beautiful web store to increase my knownledge on javascript.
+              no framework pure javascript store.
             </p>
           </div>
           <div className="gridp Three">
@@ -117,9 +110,14 @@ const Projects = () => {
               </Link>
             </div>
             <p data-aos-duration="1000" data-aos="fade-in" data-aos-delay="700">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              architecto vel odit distinctio accusantium asperiores minus!
-              Tempora delectus tenetur laborum?
+              I am currently working on an app built with React Native that aims
+              to assist individuals involved in selling Eid clothes. The app
+              will feature a wide selection of clothes from three major
+              companies. Previously, sellers faced challenges with in-person
+              sales when customers wanted to purchase three dozen clothes or
+              more. With this app, they will be able to conveniently buy three
+              dozen or more clothes, list them on the platform, and the app will
+              provide information on where they can deliver their products.
             </p>
           </div>
           <div className="gridp Four">
@@ -150,9 +148,10 @@ const Projects = () => {
               </Link>
             </div>
             <p data-aos-duration="1000" data-aos="fade-in" data-aos-delay="900">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              architecto vel odit distinctio accusantium asperiores minus!
-              Tempora delectus tenetur laborum?
+              An Attendnece Application that would help many schools and university
+              to keep track on the students who came to class and the ones who
+              did'nt and it has a lot of features. and it would help teachers to
+              see which class they are teaching the whole year.
             </p>
           </div>
         </div>
