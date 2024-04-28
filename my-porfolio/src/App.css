@@ -12,12 +12,11 @@
   font-weight: bold;
   font-style: normal;
 }
-/* --main-color: #339b67;  */
 
 :root {
-  --clr-gold: #c59d5f;
   --clr-black: #222;
-  --main-color: #F7931E;
+  --main-color: #339b67;
+  --secondary-color: #F7931E;
   --third-color: #2f2f2f;
 }
 
@@ -50,7 +49,7 @@ body {
 }
 
 .projectspan {
-  color: var(--secondry-color);
+  color: #F6921E;
   font-size: 2.5rem;
 }
 

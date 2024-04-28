@@ -3,6 +3,7 @@ import { editing, marketing, uiux, web } from "../assets/index";
 import { motion } from "framer-motion";
 import { navVariants } from "../utilist/motion";
 import { Link } from "react-router-dom";
+import { Color } from "three";
 
 const Services = () => {
   return (
@@ -23,6 +24,7 @@ const Services = () => {
               Projects that you can view them on Github reach out if you want
               user friendly website
             </p>
+            <Link  to="" style={{ textDecoration: 'none' , color: "#F6921E" }}>Visit here</Link>
             <h3>Front-end developer</h3>
           </motion.div>
           <motion.div
@@ -37,6 +39,7 @@ const Services = () => {
               I design Your dream website with UI/UX approach to make it more
               interactive for the users.
             </p>
+            <Link to=""  style={{ textDecoration: 'none' , color: "#F6921E" }}>Visit here</Link>
             <h3>UI/UX</h3>
           </motion.div>
           <motion.div
@@ -51,8 +54,8 @@ const Services = () => {
               i'm digital marketing who promote products on facebook ads. aiming
               the audience who want that product we promoted alot of business so
               they can reach global audience.
-              <Link to="">Contact us here</Link>
             </p>
+              <Link to=""  style={{ textDecoration: 'none' , color: "#F6921E" }}>Visit here</Link>
             <h3>Digital marketing</h3>
           </motion.div>
           <motion.div
@@ -68,6 +71,7 @@ const Services = () => {
               people through online videos about their life or projects they are
               working on
             </p>
+            <Link to=""  style={{ textDecoration: 'none' , color: "#F6921E" }}>Visit here</Link>
             <h3>Video Editing</h3>
           </motion.div>
         </div>

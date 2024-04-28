@@ -6,7 +6,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "framer-motion";
 import { navVariants } from "../utilist/motion";
-import { logo3 } from "../assets/";
 import { harbi } from "../assets/";
 
 const Navbar = () => {

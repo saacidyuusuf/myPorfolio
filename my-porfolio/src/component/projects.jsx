@@ -34,7 +34,9 @@ const Projects = () => {
               >
                 Baxarflow Application
               </h3>
-              <Link to="https://github.com/saacidyuusuf/baxarFlow-application">
+              <Link
+              style={{ textDecoration: 'none' , color: "#F6921E" }}
+               to="https://github.com/saacidyuusuf/baxarFlow-application">
                 <span>
                   <FaGithub
                     className="icongit"
@@ -66,7 +68,7 @@ const Projects = () => {
               >
                 baxarStore Website
               </h3>
-              <Link>
+              <Link style={{ textDecoration: 'none' , color: "#F6921E" }}>
                 <span>
                   <FaGithub
                     className="icongit"
@@ -98,7 +100,9 @@ const Projects = () => {
               >
                 EidStore Website
               </h3>
-              <Link to="https://github.com/saacidyuusuf/EidStore">
+              <Link 
+              style={{ textDecoration: 'none' , color: "#F6921E" }}
+              to="https://github.com/saacidyuusuf/EidStore">
                 <span>
                   <FaGithub
                     className="icongit"
@@ -136,7 +140,9 @@ const Projects = () => {
               >
                 Attendence application
               </h3>
-              <Link to="https://github.com/saacidyuusuf/Attendence-application">
+              <Link 
+              style={{ textDecoration: 'none' , color: "#F6921E" }}
+              to="https://github.com/saacidyuusuf/Attendence-application">
                 <span>
                   <FaGithub
                     className="icongit"

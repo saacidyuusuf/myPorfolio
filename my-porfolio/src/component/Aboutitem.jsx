@@ -11,14 +11,18 @@ const Aboutitem = () => {
   return (
     <>
       <section data-aos="fade-in" className={Classes.myjourney}>
-        <h1>About me</h1>
+        <h1>
+          <span className="projectspan">&&</span>
+          About me
+        </h1>
         <div className={Classes.containert}>
           <motion.div
             variants={navVariants}
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
-            className={Classes.journeyhaye}>
+            className={Classes.journeyhaye}
+          >
             <div className={Classes.gadalcols}>
               <h4>Journey</h4>
               <p>
@@ -35,7 +39,7 @@ const Aboutitem = () => {
                 Resume
               </a>
             </div>
-            
+
             <div className={Classes.wido}>
               <img src={ani} alt="my picture" w />
             </div>

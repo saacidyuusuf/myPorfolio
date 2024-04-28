@@ -12,7 +12,9 @@ const Testimonial = () => {
 
   return (
     <>
-      <h1 className="testiTitle">Testimonial</h1>
+      <h1 className="testiTitle">
+      <span className="projectspan">&&</span>
+        Testimonial</h1>
       <div className="picture">
         <motion.div className="picture-container">
           <motion.img
