@@ -12,12 +12,12 @@
   font-weight: bold;
   font-style: normal;
 }
+/* --main-color: #339b67;  */
 
 :root {
   --clr-gold: #c59d5f;
   --clr-black: #222;
-  --main-color: #339b67;
-  --secondry-color: #ffcb74;
+  --main-color: #F7931E;
   --third-color: #2f2f2f;
 }
 
@@ -30,6 +30,12 @@ canvas {
   position: fixed;
 }
 
+.imgscontent img{
+  color: var(--secondry-color);
+  background-color: var(--secondry-color);
+  border-radius: 0.30rem;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -37,6 +43,7 @@ body {
 .projects {
   color: white;
 }
+
 .projectTitle {
   font-size: 3rem;
   color: var(--main-color);
@@ -121,8 +128,12 @@ body {
   grid-area: four;
 }
 
+.icongit{
+  font-size: 2rem;
+}
+
 .projectwork {
-  margin-bottom: 35rem;
+  margin-bottom: 25rem;
 }
 
 @media (max-width: 900px) {
@@ -176,6 +187,103 @@ body {
   }
 }
 
+/* services */
+
+.servicesHaye {
+  width: 95%;
+  margin: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4.5rem;
+  color: var(--main-color);
+}
+
+.servicesHaye h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 2.2rem;
+  color: var(--main-color);
+}
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.4rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.serviceCol {
+  color: black;
+  padding: 1.8rem;
+  border-radius: 1rem;
+}
+
+.serviceCol:hover {
+  transition: 0.6s;
+  background-color: #2b2a2aef;
+  box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.serviceCol p {
+  line-height: 1.2;
+  font-weight: 500;
+  color: white;
+}
+
+.serviceCol h3 {
+  color: var(--main-color);
+}
+
+.serviceCol img {
+  width: 10%;
+}
+
+@media (max-width: 900px) {
+  .service {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.4rem;
+  }
+}
+
+@media (max-width: 430px) and (max-width: 932px) {
+  .servicesHaye {
+    width: 190%;
+    height: auto;
+    display: grid;
+    color: var(--main-color);
+  }
+  .service {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+  }
+  .serviceCol img {
+    width: 100%;
+    height: auto;
+  }
+  .serviceCol p {
+    font-size: 2rem;
+  }
+  .serviceCol h3 {
+    font-size: 2rem;
+  }
+  .gredient {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+  .service {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+  }
+}
+
 /* testimonial */
 
 .testiTitle {
@@ -184,13 +292,16 @@ body {
   font-size: 3rem;
 }
 
+.que{
+  width: 5%;
+}
+
 .picture {
   position: relative;
   margin-top: 3rem;
   margin-bottom: 3rem;
   display: flex;
   justify-content: space-around;
-  color: white;
 }
 
 .picture-container {
@@ -200,8 +311,12 @@ body {
   display: flex;
 }
 
+.content-container p {
+  font-size: 1rem;
+}
+
 .picture-container img {
-  width: 20%;
+  width: 10%;
   cursor: pointer;
   margin-right: 10px;
   border: 2px solid transparent;
@@ -209,28 +324,8 @@ body {
   border-radius: 1rem;
 }
 
-.picture-container img:first-child {
-  position: absolute;
-  left: 15%;
-  height: 63vh;
-  z-index: 1;
-}
-
-.picture-container img:nth-child(2) {
-  position: absolute;
-  height: 63vh;
-  left: 25%;
-  z-index: 3;
-}
-
-.picture-container img:nth-child(1) {
-  position: absolute;
-  left: 10%;
-  z-index: 2;
-}
-
 .picture-container img.selected {
-  border: 3px solid var(--secondry-color);
+  border: 4px solid var(--main-color);
   z-index: 9999;
   width: 25%;
   height: 55vh;
@@ -238,7 +333,7 @@ body {
 
 .content-container {
   position: absolute;
-  left: 53%;
+  left: 54%;
   margin-top: 20px;
 }
 
@@ -248,120 +343,52 @@ body {
   margin-bottom: 1.3rem;
 }
 
+.imgscontent p{
+  color: white;
+  padding: 2rem;
+}
+
 .imgscontent span {
   color: var(--secondry-color);
   margin-bottom: 1rem;
 }
+/*  */
 
 .aboutfooter {
   margin-bottom: 5rem;
 }
 
-@media (max-width: 900px) {
-  .content-container {
-    z-index: 3;
-    top: 100%;
-    left: 5%;
-  }
-  .aboutfooter {
-    margin-bottom: 15rem;
-  }
-  .imgscontent h1 {
-    text-align: center;
-  }
-  .imgscontent span {
-    text-align: center;
-    font-size: 1rem;
-  }
-  .imgscontent p {
-    white-space: wrap;
-  }
-  .picture-container img.selected {
-    border-color: blue;
-    z-index: 2;
-    width: 50%;
-    height: 55vh;
-  }
-  .picture-container img {
-    width: 40%;
-    cursor: pointer;
-    margin-right: 10px;
-    border: 2px solid transparent;
-    transition: border-color 0.3s ease;
-  }
-  /* kan sadaxad */
-  .picture-container img:nth-child(2) {
-    position: absolute;
-    left: 50%;
-    height: 55vh;
-  }
-  /* kan dhaxda */
-  .picture-container img:nth-child(1) {
-    position: absolute;
-    left: 25%;
-    height: 55vh;
-  }
-}
-
-@media (min-width: 1100px) and (max-width: 1300px) {
-  .picture {
-    position: relative;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    color: white;
-  }
-  .content-container {
-    position: absolute;
-    top: 70%;
-    left: 48%;
-  }
-  .picture-container img.selected {
-    border-color: blue;
-    z-index: 2;
-    width: 50%;
-    height: 55vh;
-  }
-  .picture-container img {
-    width: 40%;
-    cursor: pointer;
-    margin-right: 10px;
-    border: 2px solid transparent;
-    transition: border-color 0.3s ease;
-  }
-  /* kan sadaxad */
-  .picture-container img:nth-child(2) {
-    position: absolute;
-    left: 50%;
-    height: 55vh;
-  }
-  /* kan dhaxda */
-  .picture-container img:nth-child(1) {
-    position: absolute;
-    left: 25%;
-    height: 55vh;
-  }
- 
-}
-
-@media (max-width: 450px) and (max-width: 600px) {
+@media (max-width: 430px) and (max-width: 932px) {
   .picture-container {
     position: relative;
-    margin: 3rem;
   }
-  .testiTitle{
+  .testiTitle {
     font-size: 5rem;
     display: flex;
     text-align: center;
     margin-left: 7rem;
   }
-  .imgscontent h1{
+  .picture {
+    position: relative;
+    margin-bottom: 35rem;
+    display: flex;
+  
+  }
+  .imgscontent{
+    width: 300%;
+    margin-top: 190%;
+    color: black;
+    z-index: 999999;
+  }
+  
+  .imgscontent h1 {
     white-space: nowrap;
   }
+  .imgscontent p {
+    font-size: 2.5rem;
+  }
   .picture-container img {
-    width: 60%;
+    width: 70%;
     cursor: pointer;
     border: 2px solid transparent;
     transition: border-color 0.3s ease;
@@ -373,25 +400,8 @@ body {
     height: 33vh;
   }
   /* kan sadaxad */
-  .picture-container img:nth-child(2) {
-    position: absolute;
-    left: 130%;
-    height: 33vh;
-    width: 60%;
-  }
-  /* kan dhaxda */
-  .picture-container img:nth-child(1) {
-    position: absolute;
-    left: 25%;
-    height: 30vh;
-  }
-  /*  */
-  .picture-container img:first-child {
-    position: absolute;
-    left: 65%;
-    height: 33vh;
-  }
-  .imgscontent p{
+
+  .imgscontent p {
     font-size: 1.3rem;
   }
 }

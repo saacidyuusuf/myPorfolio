@@ -29,12 +29,12 @@ const Navbar = () => {
               <ul className={Classes.navmenu}>
                 <li>
                   <Link to="/" className={Classes.singlelink}>
-                    Work
+                    work
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" className={Classes.singlelink}>
-                    About
+                  <Link to="/service" className={Classes.singlelink}>
+                    service
                   </Link>
                 </li>
                 <li>
@@ -64,8 +64,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/about" className={Classes.singlelink}>
-                  About
+                <Link to="/service" className={Classes.singlelink}>
+                  Service
                 </Link>
               </li>
               <li>

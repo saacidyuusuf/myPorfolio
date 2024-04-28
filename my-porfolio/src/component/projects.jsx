@@ -1,12 +1,18 @@
-import { projectimg2, projectimg4, saacid } from "../assets";
+import {
+  attendenceImg,
+  app,
+  baxarApp,
+  store,
+} from "../assets";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   useEffect(() => {
-    AOS.init(); // Initialize AOS
+    AOS.init(); 
   }, []);
   return (
     <section className="projects">
@@ -22,7 +28,7 @@ const Projects = () => {
               data-aos="fade-in"
               data-aos-duration="1000"
               data-aos-delay="500"
-              src={projectimg4}
+              src={baxarApp}
               alt=""
             />
             <div className="githupProject">
@@ -31,16 +37,18 @@ const Projects = () => {
                 data-aos-duration="1000"
                 data-aos-delay="500"
               >
-                Studio Website
+                Baxarflow Application
               </h3>
-              <span>
-                <FaGithub
-                  className="icongit"
-                  data-aos="fade-in"
-                  data-aos-duration="1000"
-                  data-aos-delay="500"
-                />
-              </span>
+              <Link to="https://github.com/saacidyuusuf/baxarFlow-application">
+                <span>
+                  <FaGithub
+                    className="icongit"
+                    data-aos="fade-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="500"
+                  />
+                </span>
+              </Link>
             </div>
             <p data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
@@ -50,7 +58,7 @@ const Projects = () => {
           </div>
           <div className="gridp Two">
             <img
-              src={projectimg2}
+              src={store}
               alt=""
               data-aos-duration="1000"
               data-aos="fade-in"
@@ -62,17 +70,18 @@ const Projects = () => {
                 data-aos="fade-in"
                 data-aos-delay="600"
               >
-                Studio Website
+                baxarStore Website
               </h3>
-              <span>
-                {" "}
-                <FaGithub
-                  className="icongit"
-                  data-aos-duration="1000"
-                  data-aos="fade-in"
-                  data-aos-delay="600"
-                />
-              </span>
+              <Link>
+                <span>
+                  <FaGithub
+                    className="icongit"
+                    data-aos-duration="1000"
+                    data-aos="fade-in"
+                    data-aos-delay="600"
+                  />
+                </span>
+              </Link>
             </div>
             <p data-aos-duration="1000" data-aos="fade-in" data-aos-delay="700">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
@@ -82,7 +91,7 @@ const Projects = () => {
           </div>
           <div className="gridp Three">
             <img
-              src={saacid}
+              src={app}
               alt=""
               data-aos-duration="1000"
               data-aos="fade-in"
@@ -94,17 +103,18 @@ const Projects = () => {
                 data-aos="fade-in"
                 data-aos-delay="800"
               >
-                Studio Website
+                EidStore Website
               </h3>
-              <span>
-                {" "}
-                <FaGithub
-                  className="icongit"
-                  data-aos-duration="1000"
-                  data-aos="fade-in"
-                  data-aos-delay="800"
-                />
-              </span>
+              <Link to="https://github.com/saacidyuusuf/EidStore">
+                <span>
+                  <FaGithub
+                    className="icongit"
+                    data-aos-duration="1000"
+                    data-aos="fade-in"
+                    data-aos-delay="800"
+                  />
+                </span>
+              </Link>
             </div>
             <p data-aos-duration="1000" data-aos="fade-in" data-aos-delay="700">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
@@ -114,7 +124,7 @@ const Projects = () => {
           </div>
           <div className="gridp Four">
             <img
-              src={projectimg2}
+              src={attendenceImg}
               alt=""
               data-aos-duration="1000"
               data-aos="fade-in"
@@ -126,17 +136,18 @@ const Projects = () => {
                 data-aos="fade-in"
                 data-aos-delay="800"
               >
-                Studio Website
+                Attendence application
               </h3>
-              <span>
-                {" "}
-                <FaGithub
-                  className="icongit"
-                  data-aos-duration="1000"
-                  data-aos="fade-in"
-                  data-aos-delay="800"
-                />
-              </span>
+              <Link to="https://github.com/saacidyuusuf/Attendence-application">
+                <span>
+                  <FaGithub
+                    className="icongit"
+                    data-aos-duration="1000"
+                    data-aos="fade-in"
+                    data-aos-delay="800"
+                  />
+                </span>
+              </Link>
             </div>
             <p data-aos-duration="1000" data-aos="fade-in" data-aos-delay="900">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit

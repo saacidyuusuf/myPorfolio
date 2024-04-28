@@ -17,7 +17,6 @@ const Contactitem = () => {
 
   return (
     <>
-     <Navbar />
       <section data-aos='zoom-in' className={classes.contactpor}>
         <div className={classes.contacts}>
           <div className={classes.contactcol}>

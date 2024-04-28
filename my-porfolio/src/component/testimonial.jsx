@@ -1,4 +1,4 @@
-import { saacid, two} from "../assets";
+import { ani, qu,que } from "../assets";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { navVariants, slideIn } from "../utilist/motion";
@@ -17,9 +17,9 @@ const Testimonial = () => {
         <motion.div className="picture-container">
           <motion.img
             variants={slideIn("left", "tween", 0.8, 0.5)}
-            initial="hidden"  
+            initial="hidden"
             whileInView="show"
-            src={saacid}
+            src={ani}
             alt="Picture 1"
             className={selectedPicture === 0 ? "selected img1" : ""}
             onClick={() => handlePictureClick(0)}
@@ -28,7 +28,7 @@ const Testimonial = () => {
             variants={slideIn("left", "tween", 0.12, 0.5)}
             initial="hidden"
             whileInView="show"
-            src={two}
+            src={ani}
             alt="Picture 2"
             className={selectedPicture === 1 ? "selected img2" : ""}
             onClick={() => handlePictureClick(1)}
@@ -37,12 +37,13 @@ const Testimonial = () => {
             variants={slideIn("left", "tween", 0.4, 0.5)}
             initial="hidden"
             whileInView="show"
-            src={saacid}
+            src={ani}
             alt="Picture 3"
             className={selectedPicture === 2 ? "selected img3" : ""}
             onClick={() => handlePictureClick(2)}
           />
         </motion.div>
+        
         <div className="content-container">
           {selectedPicture === 0 && (
             <motion.div
@@ -52,13 +53,13 @@ const Testimonial = () => {
               viewport={{ once: false, amount: 0.25 }}
               className="imgscontent"
             >
-              <h1>E-commerce website</h1>
-              <span>CEO</span>
+              <img src={qu} className="que" alt="" />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aspernatur cum harum voluptatum sint aut praesentium esse ipsa
                 similique est odio?
               </p>
+              <img src={que} className="que" alt="" />
             </motion.div>
           )}
           {selectedPicture === 1 && (
@@ -69,13 +70,13 @@ const Testimonial = () => {
               viewport={{ once: false, amount: 0.25 }}
               className="imgscontent"
             >
-              <h1>Design Agency</h1>
-              <span>CEO</span>
+              <img src={qu} className="que" alt="" />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aspernatur cum harum voluptatum sint aut praesentium esse ipsa
                 similique est odio?
               </p>
+              <img src={que} className="que" alt="" />
             </motion.div>
           )}
           {selectedPicture === 2 && (
@@ -86,13 +87,13 @@ const Testimonial = () => {
               viewport={{ once: false, amount: 0.25 }}
               className="imgscontent"
             >
-              <h1>Book labirary</h1>
-              <span>CEO</span>
+              <img src={qu} className="que" alt="" />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aspernatur cum harum voluptatum sint aut praesentium esse ipsa
                 similique est odio?
               </p>
+              <img src={que} className="que" alt="" />
             </motion.div>
           )}
         </div>

@@ -4,12 +4,12 @@ import Classes from "./About.module.css";
 import { motion } from "framer-motion";
 import { navVariants } from "../utilist/motion";
 import Testimonial from "./testimonial";
-import Footer from "./Footer";
+
+import { ani } from "../assets";
 
 const Aboutitem = () => {
   return (
     <>
-      <Navbar />
       <section data-aos="fade-in" className={Classes.myjourney}>
         <h1>About me</h1>
         <div className={Classes.containert}>
@@ -18,9 +18,7 @@ const Aboutitem = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
-            className={Classes.journeyhaye}
-          >
-            <div className={Classes.coloraboutme}></div>
+            className={Classes.journeyhaye}>
             <div className={Classes.gadalcols}>
               <h4>Journey</h4>
               <p>
@@ -37,41 +35,13 @@ const Aboutitem = () => {
                 Resume
               </a>
             </div>
+            
             <div className={Classes.wido}>
-              <div className={Classes.exporttitle}>
-                <h2>What i Cook</h2>
-              </div>
-              <motion.div className={Classes.dogrid}>
-                <motion.div className={Classes.do}>
-                  <h3>Application Developer</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ratione eius assumenda numquam accusantium aliquam modi?
-                  </p>
-                </motion.div>
-                <motion.div className={Classes.do}>
-                  <h3>Web developer</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ratione eius assumenda numquam accusantium aliquam modi?
-                  </p>
-                </motion.div>
-                <motion.div className={Classes.do}>
-                  <h3>Database</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ratione eius assumenda numquam accusantium aliquam modi?
-                  </p>
-                </motion.div>
-              </motion.div>
+              <img src={ani} alt="my picture" w />
             </div>
           </motion.div>
         </div>
       </section>
-      <div className="aboutfooter">
-        <Testimonial />
-      </div>
-      <Footer />
     </>
   );
 };
